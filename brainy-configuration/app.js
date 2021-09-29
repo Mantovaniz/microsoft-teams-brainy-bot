@@ -9,6 +9,7 @@ const cookieParser = require("cookie-parser");
 const OIDCStrategy = require("passport-azure-ad").OIDCStrategy;
 const cookieSession = require("cookie-session");
 const cryptoRandomString = require("crypto-random-string");
+const split = require("split");
 
 dotenv.config({
   path: path.join(__dirname, ".env"),
